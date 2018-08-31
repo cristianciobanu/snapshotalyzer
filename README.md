@@ -10,7 +10,8 @@ admin uses the configuration file created by AWS cli e.g.
     aws configure --profile admin
 
 ## running
-pipenv run python admin/admin.py <command> <--project=PROJECT>
+pipenv run python admin/admin.py <command> <subcommand> <--project=PROJECT>
 
-*command* is list, start or stop
+*command* is instances, volumes or snapshots
+*subcommand*  depends on command
 *project* is optional
